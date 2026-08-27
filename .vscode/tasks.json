@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run C++ with Input",
+            "type": "shell",
+            "command": "g++ code.cpp -o code.exe && ./code.exe < input.txt > output.txt",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
