@@ -13,9 +13,10 @@ int main(){
     for (int i =0 ; i<n; i++){
         cin>>arr[i];
     }
-
-    doSomething(arr,n);
-    cout<<"value inside int main:"<<arr[0]<<endl;
+for(int i=0;i<n;i++){
+    cout<<arr[i]<<" ";
+    
+}
 
 return 0;
 }

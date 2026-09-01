@@ -1,2 +1,1 @@
-value inside func:110
-value inside int main:110
+10 20 30 40 50 
