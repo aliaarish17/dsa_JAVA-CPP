@@ -25,5 +25,6 @@ int main(){
     int n;
     cin >>n;
     printDivisors(n);
+    return 0;
 
 }
