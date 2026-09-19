@@ -4,17 +4,13 @@ using namespace std;
 int main(){
     int n;
     cin>> n;
-    int temp = n;
-    int sum =0;
-    while(n>0){
-        int ld= n%10  ;
-        sum = sum+ (ld*ld*ld);
-        n=n/10;
+    //divisors:
+
+    for (int i = 1; i <= n; i++)
+    {
+        if(n%i==0){
+            cout<< i<< endl;
+        }
     }
-    if(temp == sum) {
-        cout<< "yes"<< sum;
-    }
-    else {
-        cout<< "no";
-    };
+    
 }
