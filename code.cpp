@@ -1,30 +1,30 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void printDivisors(int n){
-    vector<int> ls;
-    for (int i =1; i<=sqrt(n); i++){
-        if (n%i==0){
-            ls.emplace_back(i);
-            if((n/i) != i){
-                ls.push_back(n/i);
-            }
+int gcd(int a , int b){
+    while(a>0&& b>0){
+        if(a>b){
+            a=a%b;
         }
 
+        else{
+            b=b%a;
+        }
+    }
+    if (a==0){
+        return b;
     }
 
-    sort(ls.begin(), ls.end());
-    for(auto it : ls){
-        cout<< it << endl;
-    }
+    else return a;
 
     
 }
 
 int main(){
-    int n;
-    cin >>n;
-    printDivisors(n);
+    int a ,b;
+    cin>>a>>b;
+    int result = gcd(a,b);
+    cout<< result;
     return 0;
 
 }
