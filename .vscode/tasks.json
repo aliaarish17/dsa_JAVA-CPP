@@ -14,7 +14,7 @@
         {
             "label": "Run Java with Input",
             "type": "shell",
-            "command": "javac Main.java && java Main < input.txt > output.txt",
+            "command": "cd \"${workspaceFolder}\" && javac src/${fileBasename} && java src.${fileBasenameNoExtension} < src/input.txt > src/output.txt",
             "problemMatcher": []
         }
     ]
