@@ -7,6 +7,7 @@ public class Maths {
         int rev = 0;
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
+        int temp = n;
 
         while(n>0){
             int ld = n%10;
@@ -14,6 +15,8 @@ public class Maths {
             n=n/10;
         
         }
-        System.out.println(rev);
+        if(temp == rev){
+            System.out.println("yes, its a palindrome");
+        } else System.out.println("not a palindrome");
     }
 }
