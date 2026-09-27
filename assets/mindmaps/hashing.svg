@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" role="img" aria-label="Hashing">
+  <title>Hashing</title>
+  <defs>
+    <pattern id="grid-hashing" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#140a08"/>
+      <rect width="16" height="1" fill="#2a1810" opacity="0.55"/>
+      <rect width="1" height="16" fill="#2a1810" opacity="0.55"/>
+    </pattern>
+    <filter id="glow-hashing" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="scan-hashing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.22"/>
+    </linearGradient>
+    <style>
+      .edge-hashing {
+        fill: none;
+        stroke: #E09B1A;
+        stroke-width: 2.5;
+        stroke-linecap: square;
+        stroke-dasharray: 10 6;
+        animation: march-hashing 1.1s linear infinite;
+      }
+      .pulse-hashing {
+        animation: pulse-hashing 2.6s ease-in-out infinite;
+      }
+      .twinkle-hashing {
+        animation: twinkle-hashing 2.2s ease-in-out infinite;
+      }
+      @keyframes march-hashing {
+        to { stroke-dashoffset: -16; }
+      }
+      @keyframes pulse-hashing {
+        0%, 100% { filter: url(#glow-hashing); }
+        50% { filter: none; }
+      }
+      @keyframes twinkle-hashing {
+        0%, 100% { opacity: 0.25; }
+        50% { opacity: 0.95; }
+      }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid-hashing)"/>
+  <rect x="8" y="8" width="984" height="624" fill="none" stroke="#FFB020" stroke-width="3"/>
+  <rect x="14" y="14" width="972" height="612" fill="none" stroke="#8A6420" stroke-width="1" opacity="0.7"/>
+  <rect width="100%" height="100%" fill="url(#scan-hashing)"/>
+  <circle class="twinkle-hashing" cx="36" cy="36" r="3" fill="#FFB020"/>
+  <circle class="twinkle-hashing" cx="964" cy="42" r="2.5" fill="#FFB020" style="animation-delay:0.6s"/>
+  <circle class="twinkle-hashing" cx="952" cy="606" r="3" fill="#FFB020" style="animation-delay:1.1s"/>
+  <text x="28" y="42" fill="#C9A227" font-family="ui-monospace, Cascadia Code, Consolas, monospace" font-size="11" letter-spacing="2">NETHER BIOME</text>
+  <text x="28" y="66" fill="#FFE7B0" font-family="Segoe UI, Tahoma, sans-serif" font-size="20" font-weight="700">Hashing</text>
+  <path class="edge-hashing" d="M402.0,330.0 C384.0,330.0 384.0,225.0 366.0,225.0"/>
+  <path class="edge-hashing" d="M198.0,225.0 C192.0,225.0 192.0,207.0 186.0,207.0"/>
+  <path class="edge-hashing" d="M198.0,225.0 C192.0,225.0 192.0,239.0 186.0,239.0"/>
+  <path class="edge-hashing" d="M402.0,330.0 C384.0,330.0 384.0,483.0 366.0,483.0"/>
+  <path class="edge-hashing" d="M198.0,483.0 C192.0,483.0 192.0,481.0 186.0,481.0"/>
+  <path class="edge-hashing" d="M598.0,330.0 C616.0,330.0 616.0,225.0 634.0,225.0"/>
+  <path class="edge-hashing" d="M802.0,225.0 C808.0,225.0 808.0,223.0 814.0,223.0"/>
+  <path class="edge-hashing" d="M598.0,330.0 C616.0,330.0 616.0,483.0 634.0,483.0"/>
+  <path class="edge-hashing" d="M802.0,483.0 C808.0,483.0 808.0,465.0 814.0,465.0"/>
+  <path class="edge-hashing" d="M802.0,483.0 C808.0,483.0 808.0,497.0 814.0,497.0"/>
+  <g class="node-hashing" style="animation-delay:0.12s">
+    <rect x="198" y="204.0" width="168" height="42" fill="#6b4423" stroke="#D4A017" stroke-width="2.5"/>
+    <rect x="201" y="207.0" width="162" height="2" fill="#D4A017" opacity="0.35"/>
+    <text x="282.0" y="225.0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="700">Frequency Count</text>
+  </g>
+  <g class="node-hashing" style="animation-delay:0.22s">
+    <rect x="22" y="193.0" width="164" height="28" fill="#241408" stroke="#8A6420" stroke-width="2.5"/>
+    <rect x="25" y="196.0" width="158" height="2" fill="#8A6420" opacity="0.35"/>
+    <text x="104.0" y="207.0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="700">Anagrams</text>
+  </g>
+  <g class="node-hashing" style="animation-delay:0.26s">
+    <rect x="22" y="225.0" width="164" height="28" fill="#241408" stroke="#8A6420" stroke-width="2.5"/>
+    <rect x="25" y="228.0" width="158" height="2" fill="#8A6420" opacity="0.35"/>
+    <text x="104.0" y="239.0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="700">Majority element</text>
+  </g>
+  <g class="node-hashing" style="animation-delay:0.21s">
+    <rect x="198" y="462.0" width="168" height="42" fill="#6b4423" stroke="#D4A017" stroke-width="2.5"/>
+    <rect x="201" y="465.0" width="162" height="2" fill="#D4A017" opacity="0.35"/>
+    <text x="282.0" y="483.0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="700">Set for Dedup</text>
+  </g>
+  <g class="node-hashing" style="animation-delay:0.31s">
+    <rect x="22" y="467.0" width="164" height="28" fill="#241408" stroke="#8A6420" stroke-width="2.5"/>
+    <rect x="25" y="470.0" width="158" height="2" fill="#8A6420" opacity="0.35"/>
+    <text x="104.0" y="481.0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="700">Longest consecutive</text>
+  </g>
+  <g class="node-hashing" style="animation-delay:0.12s">
+    <rect x="634" y="204.0" width="168" height="42" fill="#6b4423" stroke="#D4A017" stroke-width="2.5"/>
+    <rect x="637" y="207.0" width="162" height="2" fill="#D4A017" opacity="0.35"/>
+    <text x="718.0" y="225.0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="700">Two Sum Pattern</text>
+  </g>
+  <g class="node-hashing" style="animation-delay:0.22s">
+    <rect x="814" y="209.0" width="164" height="28" fill="#241408" stroke="#8A6420" stroke-width="2.5"/>
+    <rect x="817" y="212.0" width="158" height="2" fill="#8A6420" opacity="0.35"/>
+    <text x="896.0" y="223.0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="700">Complement lookup</text>
+  </g>
+  <g class="node-hashing" style="animation-delay:0.21s">
+    <rect x="634" y="462.0" width="168" height="42" fill="#6b4423" stroke="#D4A017" stroke-width="2.5"/>
+    <rect x="637" y="465.0" width="162" height="2" fill="#D4A017" opacity="0.35"/>
+    <text x="718.0" y="483.0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Segoe UI, Tahoma, sans-serif" font-size="13" font-weight="700">Map as Cache</text>
+  </g>
+  <g class="node-hashing" style="animation-delay:0.31s">
+    <rect x="814" y="451.0" width="164" height="28" fill="#241408" stroke="#8A6420" stroke-width="2.5"/>
+    <rect x="817" y="454.0" width="158" height="2" fill="#8A6420" opacity="0.35"/>
+    <text x="896.0" y="465.0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="700">Grouping</text>
+  </g>
+  <g class="node-hashing" style="animation-delay:0.35s">
+    <rect x="814" y="483.0" width="164" height="28" fill="#241408" stroke="#8A6420" stroke-width="2.5"/>
+    <rect x="817" y="486.0" width="158" height="2" fill="#8A6420" opacity="0.35"/>
+    <text x="896.0" y="497.0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Segoe UI, Tahoma, sans-serif" font-size="11" font-weight="700">Index tracking</text>
+  </g>
+  <g class="pulse-hashing" style="animation-delay:0.02s" filter="url(#glow-hashing)">
+    <rect x="402.0" y="292" width="196" height="76" fill="#4a2a12" stroke="#FFB020" stroke-width="2.5"/>
+    <rect x="405.0" y="295" width="190" height="2" fill="#FFB020" opacity="0.35"/>
+    <text x="500.0" y="330.0" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Segoe UI, Tahoma, sans-serif" font-size="16" font-weight="700">HASHING</text>
+  </g>
+</svg>
