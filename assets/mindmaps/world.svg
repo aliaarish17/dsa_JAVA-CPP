@@ -63,8 +63,8 @@
   <g class="node-world" style="animation-delay:0.12s">
     <rect x="52" y="140" width="280" height="228" fill="#1d4a18" stroke="#7CFF4A" stroke-width="3"/>
     <rect x="60" y="148" width="264" height="8" fill="#7CFF4A" opacity="0.35"/>
-    <text x="192" y="184" text-anchor="middle" fill="#E8F5D8" font-size="18" font-weight="700" font-family="Segoe UI, Tahoma, sans-serif">OVERWORLD</text>
-    <text x="192" y="206" text-anchor="middle" fill="#9CCC7A" font-size="11" font-family="ui-monospace, Consolas, monospace">wood pickaxe era</text>
+    <text x="192" y="184" text-anchor="middle" fill="#E8F5D8" font-size="18" font-weight="700" font-family="Segoe UI, Tahoma, sans-serif"></text>
+    <text x="192" y="206" text-anchor="middle" fill="#9CCC7A" font-size="11" font-family="ui-monospace, Consolas, monospace"></text>
     <rect x="80" y="228" width="224" height="32" fill="#102410" stroke="#4A7C1F" stroke-width="2"/><text x="192" y="248" text-anchor="middle" fill="#E8F5D8" font-size="13" font-weight="700" font-family="Segoe UI, Tahoma, sans-serif">Arrays</text><rect x="80" y="270" width="224" height="32" fill="#102410" stroke="#4A7C1F" stroke-width="2"/><text x="192" y="290" text-anchor="middle" fill="#E8F5D8" font-size="13" font-weight="700" font-family="Segoe UI, Tahoma, sans-serif">Strings</text><rect x="80" y="312" width="224" height="32" fill="#102410" stroke="#4A7C1F" stroke-width="2"/><text x="192" y="332" text-anchor="middle" fill="#E8F5D8" font-size="13" font-weight="700" font-family="Segoe UI, Tahoma, sans-serif">Recursion</text>
   </g>
   <g class="node-world" style="animation-delay:0.22s">
